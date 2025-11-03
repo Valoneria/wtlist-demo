@@ -51,13 +51,12 @@ Alternative combined dev (uses concurrently): `composer run dev`
   - `country` — filter by `vehicle_countries.id`
   - `min_rank` / `max_rank`
 
-### Testing
-- Uses Pest. Run tests with: `php artisan test`
-
 ### Known limitations / caveats
 - Authentication scaffolding (Breeze) exists but is not configured.
 - Import relies on a public third-party API and may be rate/availability constrained.
 - Images are written directly to `public/vehicles/*`; no checksum/versioning.
 - `set_time_limit(3000)` is used in import to avoid timeouts; a queued job would be preferable.
 - No pagination on the vehicle list; all matching vehicles are rendered.
+- Pest is setup, but no functional tests can be run
+
 
